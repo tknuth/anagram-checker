@@ -11,6 +11,7 @@ setup(
     description="Anagram checking implementations for teaching purposes.",
     author="Tobias Knuth",
     packages=find_packages(),
+    package_dir={"": "src"},
     install_requires=requires,
     extras_require={"dev": dev_requires},
 )
