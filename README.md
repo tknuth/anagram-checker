@@ -1,2 +1,3 @@
-# anagram-checker
+# Anagram Checker
+
 Anagram checking implementations for teaching purposes.

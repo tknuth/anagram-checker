@@ -1,0 +1,16 @@
+from setuptools import setup, find_packages
+import sys
+
+requires = ["click"]
+
+dev_requires = ["bump2version", "pytest", "pytest-sugar"]
+
+setup(
+    name="Anagram Checker",
+    version="0.0.1",
+    description="Anagram checking implementations for teaching purposes.",
+    author="Tobias Knuth",
+    packages=find_packages(),
+    install_requires=requires,
+    extras_require={"dev": dev_requires},
+)
