@@ -10,7 +10,7 @@ setup(
     version="1.0.0",
     description="Anagram checking implementations for teaching purposes.",
     author="Tobias Knuth",
-    packages=find_packages(),
+    packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=requires,
     extras_require={"dev": dev_requires},
