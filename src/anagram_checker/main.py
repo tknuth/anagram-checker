@@ -1,3 +1,7 @@
+import collections
+import itertools as it
+
+
 def tick_while(a, b):
     if len(a) != len(b):
         return False
@@ -39,6 +43,27 @@ def tick_for(a, b):
     return True
 
 
+def sort(a, b):
+    return sorted(a) == sorted(b)
+
+
+def collections_counter(a, b):
+    a = collections.Counter(a)
+    b = collections.Counter(b)
+    return a == b
+
+
+def counter(a, b):
+    p = {}
+    q = {}
+    for l, d in ((a, p), (b, q)):
+        for letter in l:
+            d[letter] = d.get(letter, 0) + 1
+    return p == q
+
+
 def brute_force(a, b):
-    # possible_words = []
-    pass
+    permutations = list(it.permutations(a, len(a)))
+    if b == "reibe":
+        print(permutations)
+    return tuple(b) in permutations
