@@ -7,7 +7,7 @@ dev_requires = ["bump2version", "pytest", "pytest-sugar"]
 
 setup(
     name="Anagram Checker",
-    version="0.1.0",
+    version="1.0.0",
     description="Anagram checking implementations for teaching purposes.",
     author="Tobias Knuth",
     packages=find_packages(),
