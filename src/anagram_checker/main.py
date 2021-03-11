@@ -64,6 +64,4 @@ def counter(a, b):
 
 def brute_force(a, b):
     permutations = list(it.permutations(a, len(a)))
-    if b == "reibe":
-        print(permutations)
     return tuple(b) in permutations
